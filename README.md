@@ -10,7 +10,8 @@ Operations: `cut` (the end offsets of the first n fields), `num` (a decimal numb
 U32), `digits` (one or more digits, any size), `put_dec` (write a number in decimal).
 
 Status: the laws (`LAWS.bend`, definitions in `defs.bend`) were reviewed in two rounds by Claude,
-GPT and Grok (`reviews/`). `fields.bend` is the reference implementation. Proofs are next.
+GPT and Grok (`reviews/`), and all 19 are proven (`PROOF.bend`; `./check.sh` runs `bend` and the
+Lean-proven kernel, `--verdict`). `fields.bend` is the reference implementation.
 
 `bend test/spot.bend` evaluates both sides of the laws on small examples.
 
