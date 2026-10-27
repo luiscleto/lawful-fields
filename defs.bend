@@ -63,23 +63,25 @@ def dec(xs: List<&2, U32>) -> Maybe<&2, Nat>:
     case Con{x, t}:
       dec.go(Con{x, t}, Some{0n})
 
-def dec32.if(+n: Nat, fits: Bool) -> Maybe<&2, Nat>:
+def decb.if(+n: Nat, fits: Bool) -> Maybe<&2, Nat>:
   match fits:
     case True{}:
       Some{n}
     case False{}:
       None{}
 
-def dec32.of(m: Maybe<&2, Nat>) -> Maybe<&2, Nat>:
+def decb.of(m: Maybe<&2, Nat>, +bound: Nat) -> Maybe<&2, Nat>:
   match m:
     case Some{+n}:
-      dec32.if(n, Nat.is_lt(n, Nat.pow(2n, 32n)))
+      decb.if(n, Nat.is_lt(n, bound))
     case None{}:
       None{}
 
-# A decimal number below 2^32 (what fits a U32); None otherwise.
-def dec32(xs: List<&2, U32>) -> Maybe<&2, Nat>:
-  dec32.of(dec(xs))
+# A decimal number below bound; None otherwise. The laws use bound = 2^32 (what
+# fits a U32), written Nat.pow(2n, 32n) in each law: the checker evaluates a
+# constant hidden in a definition, and 2^32 in unary is too deep.
+def decb(xs: List<&2, U32>, +bound: Nat) -> Maybe<&2, Nat>:
+  decb.of(dec(xs), bound)
 
 # The number a Maybe<U32> stands for.
 def nat_of(m: Maybe<&2, U32>) -> Maybe<&2, Nat>:

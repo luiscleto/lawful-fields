@@ -4,7 +4,7 @@ import ../../lawful-bytes/bytes.bend as B
 import ../defs.bend as F
 import ../fields.bend as C
 
-# Spot checks (dec32 compares with 2^32, a unary Nat too large to evaluate,
+# Spot checks (decb with bound 2^32 compares with a unary Nat too large to evaluate,
 # so it is not evaluated here) on a VCF-like line: "chr1\t123\t.\tAC\tA\n" (and variants).
 
 def line() -> D.Bytes:

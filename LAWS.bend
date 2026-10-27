@@ -67,7 +67,7 @@ law num_view:
   for h: {D.ok(b, d) == True{} : Bool}
   for hft: {U32.is_le(from, to) == True{} : Bool}
   for ht: {Nat.is_le(U32.to_nat(to), D.size(b)) == True{} : Bool}
-  {F.nat_of(Pair.snd(D.Bytes, Maybe<&2, U32>, C.num(b, from, to))) == F.dec32(D.slice(D.view(b), U32.to_nat(from), Nat.sub(U32.to_nat(to), U32.to_nat(from)))) : Maybe<&2, Nat>}
+  {F.nat_of(Pair.snd(D.Bytes, Maybe<&2, U32>, C.num(b, from, to))) == F.decb(D.slice(D.view(b), U32.to_nat(from), Nat.sub(U32.to_nat(to), U32.to_nat(from))), Nat.pow(2n, 32n)) : Maybe<&2, Nat>}
 
 law num_pair:
   for b: D.Bytes
@@ -166,10 +166,10 @@ law pieces_length:
   for from: Nat
   {List.length(&2, List<&2, U32>, F.pieces(es, xs, from)) == List.length(&2, U32, es) : Nat}
 
-# dec32 is dec when the number fits.
-law dec32_fits:
+# decb (with bound 2^32) is dec when the number fits.
+law decb_fits:
   for xs: List<&2, U32>
   for n: Nat
   for h: {F.dec(xs) == Some{n} : Maybe<&2, Nat>}
   for hn: {Nat.is_lt(n, Nat.pow(2n, 32n)) == True{} : Bool}
-  {F.dec32(xs) == Some{n} : Maybe<&2, Nat>}
+  {F.decb(xs, Nat.pow(2n, 32n)) == Some{n} : Maybe<&2, Nat>}
