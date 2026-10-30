@@ -1,6 +1,6 @@
 import Base
-import ../lawful-bytes/defs.bend as D
-import ../lawful-bytes/bytes.bend as B
+import lawful-bytes@0.1.0.0/defs.bend as D
+import lawful-bytes@0.1.0.0/bytes.bend as B
 
 # lawful-fields operations on packed bytes: cutting a line into fields at a
 # separator, and reading a decimal number. Reference versions, built on

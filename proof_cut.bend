@@ -1,19 +1,19 @@
 import Base
-import ../lawful-bytes/defs.bend as D
-import ../lawful-bytes/bytes.bend as B
+import lawful-bytes@0.1.0.0/defs.bend as D
+import lawful-bytes@0.1.0.0/bytes.bend as B
 import ./defs.bend as F
 import ./fields.bend as K
-import ../lawful-bytes/proof_seq.bend as S
-import ../lawful-bytes/proof_core.bend as C
-import ../lawful-bytes/proof_ops.bend as O
-import ../lawful-bytes/proof_list.bend as Q
-import ../lawful-bytes/proof_append.bend as X
-import ../lawful-bytes/proof_shift.bend as H
-import ../lawful-bytes/proof_find.bend as FI
-import ../lawful-words/proof_nat.bend as N
-import ../lawful-words/proof_u32.bend as U
-import ../lawful-arrays/proof_base.bend as AB
-import ../lawful-arrays/proof_tree.bend as P
+import lawful-bytes@0.1.0.0/proof_seq.bend as S
+import lawful-bytes@0.1.0.0/proof_core.bend as C
+import lawful-bytes@0.1.0.0/proof_ops.bend as O
+import lawful-bytes@0.1.0.0/proof_list.bend as Q
+import lawful-bytes@0.1.0.0/proof_append.bend as X
+import lawful-bytes@0.1.0.0/proof_shift.bend as H
+import lawful-bytes@0.1.0.0/proof_find.bend as FI
+import lawful-words@0.1.0.0/proof_nat.bend as N
+import lawful-words@0.1.0.0/proof_u32.bend as U
+import lawful-arrays@0.1.0.0/proof_base.bend as AB
+import lawful-arrays@0.1.0.0/proof_tree.bend as P
 
 # cut on the mirror C.BT(len, t) (lawful-bytes). CG mirrors cut.go as a Data
 # function (cg_eq), so the laws are about CG. split is described by run_len

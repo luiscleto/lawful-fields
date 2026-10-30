@@ -1,15 +1,15 @@
 import Base
-import ../lawful-bytes/defs.bend as D
-import ../lawful-bytes/bytes.bend as B
+import lawful-bytes@0.1.0.0/defs.bend as D
+import lawful-bytes@0.1.0.0/bytes.bend as B
 import ./defs.bend as F
 import ./fields.bend as C
-import ../lawful-bytes/proof_seq.bend as Q
-import ../lawful-bytes/proof_core.bend as K
-import ../lawful-bytes/proof_append.bend as X
-import ../lawful-words/proof_nat.bend as N
-import ../lawful-words/proof_u32.bend as U
-import ../lawful-arrays/proof_base.bend as AB
-import ../lawful-arrays/proof_tree.bend as P
+import lawful-bytes@0.1.0.0/proof_seq.bend as Q
+import lawful-bytes@0.1.0.0/proof_core.bend as K
+import lawful-bytes@0.1.0.0/proof_append.bend as X
+import lawful-words@0.1.0.0/proof_nat.bend as N
+import lawful-words@0.1.0.0/proof_u32.bend as U
+import lawful-arrays@0.1.0.0/proof_base.bend as AB
+import lawful-arrays@0.1.0.0/proof_tree.bend as P
 
 # num on the mirror K.BT(len, t). The checker normalizes both sides of any
 # conversion that is not a syntactic identity, and normalizing 2^32, or

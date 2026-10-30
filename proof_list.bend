@@ -1,9 +1,9 @@
 import Base
-import ../lawful-bytes/defs.bend as D
+import lawful-bytes@0.1.0.0/defs.bend as D
 import ./defs.bend as F
-import ../lawful-words/proof_nat.bend as N
-import ../lawful-words/proof_u32.bend as U
-import ../lawful-arrays/proof_base.bend as AB
+import lawful-words@0.1.0.0/proof_nat.bend as N
+import lawful-words@0.1.0.0/proof_u32.bend as U
+import lawful-arrays@0.1.0.0/proof_base.bend as AB
 
 # The laws about lists, text and decb, restated with every variable reusable
 # (same names and statements as in LAWS.bend).
