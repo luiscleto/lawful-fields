@@ -1,9 +1,9 @@
 import Base
-import lawful-bytes@0.1.0.0/defs.bend as D
+import lawful-bytes@0.1.1.0/defs.bend as D
 import ./defs.bend as F
 import ./fields.bend as C
 import ./LAWS.bend as L
-import lawful-bytes@0.1.0.0/proof_core.bend as BC
+import lawful-bytes@0.1.1.0/proof_core.bend as BC
 import ./proof_list.bend as Q
 import ./proof_cut.bend as Z
 import ./proof_num.bend as NU

@@ -1,5 +1,5 @@
 import Base
-import lawful-bytes@0.1.0.0/defs.bend as D
+import lawful-bytes@0.1.1.0/defs.bend as D
 import ./defs.bend as F
 import ./fields.bend as C
 

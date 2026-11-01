@@ -1,21 +1,21 @@
 import Base
-import lawful-bytes@0.1.0.0/defs.bend as D
-import lawful-bytes@0.1.0.0/bytes.bend as B
+import lawful-bytes@0.1.1.0/defs.bend as D
+import lawful-bytes@0.1.1.0/bytes.bend as B
 import ./defs.bend as F
 import ./fields.bend as FC
-import lawful-bytes@0.1.0.0/proof_seq.bend as Q
-import lawful-bytes@0.1.0.0/proof_core.bend as C
-import lawful-bytes@0.1.0.0/proof_ops.bend as O
-import lawful-bytes@0.1.0.0/proof_same.bend as SM
-import lawful-bytes@0.1.0.0/proof_shift.bend as H
-import lawful-bytes@0.1.0.0/proof_grow.bend as G
+import lawful-bytes@0.1.1.0/proof_seq.bend as Q
+import lawful-bytes@0.1.1.0/proof_core.bend as C
+import lawful-bytes@0.1.1.0/proof_ops.bend as O
+import lawful-bytes@0.1.1.0/proof_same.bend as SM
+import lawful-bytes@0.1.1.0/proof_shift.bend as H
+import lawful-bytes@0.1.1.0/proof_grow.bend as G
 import lawful-words@0.1.0.0/proof_nat.bend as N
 import lawful-words@0.1.0.0/proof_u32.bend as U
 import lawful-arrays@0.1.0.0/proof_base.bend as AB
 import lawful-arrays@0.1.0.0/proof_tree.bend as P
 
 # digits and put_dec on the mirror C.BT(len, t) (named `name_t` as in
-# lawful-bytes@0.1.0.0/proof_ops.bend).
+# lawful-bytes@0.1.1.0/proof_ops.bend).
 
 # digits
 # ======

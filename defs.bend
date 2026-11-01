@@ -1,6 +1,6 @@
 import Base
 import lawful-words@0.1.0.0/defs.bend as W
-import lawful-bytes@0.1.0.0/defs.bend as D
+import lawful-bytes@0.1.1.0/defs.bend as D
 
 # lawful-fields definitions: splitting a list of bytes and reading decimal
 # numbers, as plain list functions. The operations on packed bytes are in

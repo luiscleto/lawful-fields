@@ -1,5 +1,5 @@
 import Base
-import lawful-bytes@0.1.0.0/defs.bend as D
+import lawful-bytes@0.1.1.0/defs.bend as D
 import ./defs.bend as F
 import lawful-words@0.1.0.0/proof_nat.bend as N
 import lawful-words@0.1.0.0/proof_u32.bend as U

@@ -21,9 +21,9 @@ Published on [BendHub](https://hub.bend-lang.com/name/lawful-fields) with its la
 an import by name and checks it against the package's hash:
 
 ```python
-import lawful-fields@0.1.0.0/fields.bend as F  # the implementation
-import lawful-fields@0.1.0.0/LAWS.bend as L    # the laws, to use in your own proofs
-import lawful-fields@0.1.0.0/PROOF.bend as P   # their proofs, which a proof using a law needs loaded
+import lawful-fields@0.1.1.0/fields.bend as F  # the implementation
+import lawful-fields@0.1.1.0/LAWS.bend as L    # the laws, to use in your own proofs
+import lawful-fields@0.1.1.0/PROOF.bend as P   # their proofs, which a proof using a law needs loaded
 ```
 
 Versions below 1.0 have laws reviewed by three AI models but not yet by a human expert.
