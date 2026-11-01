@@ -9,6 +9,8 @@ strings, while it runs on packed bytes and never builds a string.
 
 ## Use
 
+Bend fetches these imports from [BendHub](https://hub.bend-lang.com/name/lawful-fields) by name:
+
 ```python
 import lawful-fields@0.1.1.0/fields.bend as F  # the operations
 import lawful-fields@0.1.1.0/defs.bend as S    # split, join, dec and the rest, on plain lists
