@@ -12,10 +12,10 @@ strings, while it runs on packed bytes and never builds a string.
 Bend fetches these imports from [BendHub](https://hub.bend-lang.com/name/lawful-fields) by name:
 
 ```python
-import lawful-fields@0.1.1.0/fields.bend as F  # the operations
-import lawful-fields@0.1.1.0/defs.bend as S    # split, join, dec and the rest, on plain lists
-import lawful-fields@0.1.1.0/LAWS.bend as L    # the laws, for your own proofs
-import lawful-fields@0.1.1.0/PROOF.bend as P   # their proofs, needed when a proof uses a law
+import lawful-fields@0.1.1.1/fields.bend as F  # the operations
+import lawful-fields@0.1.1.1/defs.bend as S    # split, join, dec and the rest, on plain lists
+import lawful-fields@0.1.1.1/LAWS.bend as L    # the laws, for your own proofs
+import lawful-fields@0.1.1.1/PROOF.bend as P   # their proofs, needed when a proof uses a law
 ```
 
 A `Bytes` can be used only once, so every read hands the buffer back along with its answer. This
@@ -23,9 +23,9 @@ program reads the second tab-separated field of a line as a number:
 
 ```python
 import Base
-import lawful-bytes@0.1.1.0/defs.bend as D
-import lawful-bytes@0.1.1.0/bytes.bend as B
-import lawful-fields@0.1.1.0/fields.bend as F
+import lawful-bytes@0.1.1.1/defs.bend as D
+import lawful-bytes@0.1.1.1/bytes.bend as B
+import lawful-fields@0.1.1.1/fields.bend as F
 
 # r holds the line and the end offsets of its first two fields.
 def second.go(r: D.Bytes & List<&2, U32>) -> Maybe<&2, U32>:
@@ -81,7 +81,7 @@ def tabs_rejoin(xs):
 ```
 
 The laws are proven. Below version 1.0 they have been reviewed by AI models but not yet by a human
-expert. [docs/LAWS.md](docs/LAWS.md) lists every law in plain words.
+expert. [docs/LAWS.md](https://github.com/luiscleto/lawful-fields/blob/main/docs/LAWS.md) lists every law in plain words.
 
 ## License
 
